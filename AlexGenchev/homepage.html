@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Car-dealership-website</title>
-        <link rel="stylesheet" href="ITcssFile.css">
-    </head>
-    <body class="body">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-dealership-website</title>
+    <link rel="stylesheet" href="ITcssFile.css">
+</head>
+
+<body class="body">
     <header class="header">
         <div class="navbar-container">
             <div class="logo-title">
-                <a href="index.html">
+                <a href="../AlexGenchev/homepage.html">
                     <img src="car_website_logo.png" alt="PQS Logo" class="logo">
                 </a>
                 <h1>PQS Motors</h1>
@@ -18,86 +20,90 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="homepage.html">Начало</a></li>
-                    <li><a href="car_page.html">Модели</a></li>
-                    <li><a href="test_drive.html">Тест драйв</a></li>
+                    <li><a href="../Bojidar Tsankov/car_page.html">Модели</a></li>
+                    <li><a href="../Bojidar Tsankov/test_drive.html">Тест драйв</a></li>
                     <li><a href="Vladimir.html">Сервизи</a></li>
                     <li><a href="Vlado.html">Дилъри</a></li>
                     <li><a href="News.html">Новини</a></li>
-                    <li><a href="about.html">За нас</a></li>
                 </ul>
             </nav>
         </div>
         <button onclick="toggleTheme()" style="margin: 20px;">Смени тема</button>
     </header>
     <script>
-  function toggleTheme() {
-    const body = document.body;
-    body.classList.toggle("light-theme");
-    const isLight = body.classList.contains("light-theme");
-    localStorage.setItem("theme", isLight ? "light" : "dark");
-  }
-  window.onload = function () {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-      document.body.classList.add("light-theme");
-    }
-  };
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("light-theme");
+            const isLight = body.classList.contains("light-theme");
+            localStorage.setItem("theme", isLight ? "light" : "dark");
+        }
+        window.onload = function () {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.body.classList.add("light-theme");
+            }
+        };
     </script>
-        <div class="hero-banner">
-            <img src="ChatGPT Image May 21, 2025, 02_57_04 PM.png" alt="Hero Banner" class="Hero-banner">
-            <div class="hero-text">
-                <h2>Добре дошли в PQS Motors</h2>
-                <p>Намери твоята мечтана кола днес. Нови, използвни, и електрически автомобили на много добри цени.</p>
-            </div>
-            <section class="about-us">
-                <h1>Защо да изберете нас</h1>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img class="about-image" src="0-02-05-fb26a5ed3cd034c8ee2ab16753a0baca271d351236bec1d0d9735d542203db47_8cf2d7e8e323c9fd.jpg"
-                         alt="Нашият екип">
-                         </div>
-                         <div class="about-text">
-                        <p>PQS Motors е основана през 2010 г. с ясна цел – да направим покупката на автомобил по-лесна, честна и достъпна.
-                             С над 10 години опит в автомобилната индустрия, ние се гордеем с обслужването, което предлагаме на нашите клиенти.
-                              Вярваме в прозрачността, коректността и в това, че всяка кола трябва да отговаря на нуждите на своя нов собственик.
-                        </p>
-                        </div>
-                     </div>
-            </section>
-            <section class="car-gallery">
-                <h1>Галерия с налични коли</h1>
-                <div class="gallery-grid">
-                    <img src="red_car.png" alt="car1" width="300px">
-                    <img src="blue_car1.png" alt="car2"width="300px">
-                    <img src="gray_car3.png" alt="car3"width="300px">
-                    <img src="sport_car.png" alt="car4"width="300px">
-                    <img src="ChatGPT Image May 21, 2025, 02_57_04 PM.png" alt="car4"width="250px">
-                    <img src="sport_car_detail1.png" alt="car4"width="250px">
-                </div>
-                <div class="gallery-buttons">
-                    <button class="more-cars">Виж всички коли</button>
-                    <button class="discount-button">Виж промоции</button>
-                </div>
-            </section>
-    </body>
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="car_website_logo.png" alt="PQS logo">
-                <h1>PQS Motors</h1>
-            </div>
-            <div class="footer-links">
-                <a href="homepage.html">Начало</a>
-                <a href="car_page.html">Коли за продажба</a>
-                <a href="News.html">Новини</a>
-                <a href="Vladimir.html">Сервизи</a>
-                <a href="Vlado.html">Дилъри</a>
-            </div>
-            <div class="footer-contacts">
-                <p> Телефон за връзка: 0888 123 456</p>
-                <p>email:Pqs.store@gmail.com</p>
-                <p>София, България</p>
-            </div>
+    <div class="hero-banner">
+        <img src="ChatGPT Image May 21, 2025, 02_57_04 PM.png" alt="Hero Banner" class="Hero-banner">
+        <div class="hero-text">
+            <h2>Добре дошли в PQS Motors</h2>
+            <p>Намери твоята мечтана кола днес. Нови, използвни, и електрически автомобили на много добри цени.</p>
         </div>
-    </footer>
+        <section class="about-us">
+            <h1>Защо да изберете нас</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img class="about-image"
+                        src="0-02-05-fb26a5ed3cd034c8ee2ab16753a0baca271d351236bec1d0d9735d542203db47_8cf2d7e8e323c9fd.jpg"
+                        alt="Нашият екип">
+                </div>
+                <div class="about-text">
+                    <p>PQS Motors е основана през 2010 г. с ясна цел – да направим покупката на автомобил по-лесна,
+                        честна и достъпна.
+                        С над 10 години опит в автомобилната индустрия, ние се гордеем с обслужването, което предлагаме
+                        на нашите клиенти.
+                        Вярваме в прозрачността, коректността и в това, че всяка кола трябва да отговаря на нуждите на
+                        своя нов собственик.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="car-gallery">
+            <h1>Галерия с налични коли</h1>
+            <div class="gallery-grid">
+                <img src="red_car.png" alt="car1" width="300px">
+                <img src="blue_car1.png" alt="car2" width="300px">
+                <img src="gray_car3.png" alt="car3" width="300px">
+                <img src="sport_car.png" alt="car4" width="300px">
+                <img src="ChatGPT Image May 21, 2025, 02_57_04 PM.png" alt="car4" width="250px">
+                <img src="sport_car_detail1.png" alt="car4" width="250px">
+            </div>
+            <div class="gallery-buttons">
+                <button class="more-cars">Виж всички коли</button>
+                <button class="discount-button">Виж промоции</button>
+            </div>
+        </section>
+</body>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="car_website_logo.png" alt="PQS logo">
+            <h1>PQS Motors</h1>
+        </div>
+        <div class="footer-links">
+            <a href="homepage.html">Начало</a>
+            <a href="car_page.html">Коли за продажба</a>
+            <a href="News.html">Новини</a>
+            <a href="Vladimir.html">Сервизи</a>
+            <a href="Vlado.html">Дилъри</a>
+        </div>
+        <div class="footer-contacts">
+            <p> Телефон за връзка: 0888 123 456</p>
+            <p>email:Pqs.store@gmail.com</p>
+            <p>София, България</p>
+        </div>
+    </div>
+</footer>
+
 </html>
