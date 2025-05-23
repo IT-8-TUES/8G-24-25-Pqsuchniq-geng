@@ -85,5 +85,14 @@
             </div>
         </div>
     </footer>
+    <script>
+      const workElements = document.getElementsByClassName("contact-section");
+
+      for (let i = 0; i < workElements.length; i++) {
+        workElements[i].addEventListener("click", (event) => {
+          alert("ПЯС Моторс АД работи от 10 до 17:30 часа");
+        });
+      }
+    </script>
 </body>
 </html>
