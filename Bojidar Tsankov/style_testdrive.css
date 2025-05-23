@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
+    background-color: #091b28;
+    color: white;
+}
+
+.test-drive-title {
+    text-align: center;
+    color: #00e0ff;
+    margin: 2rem 0 1rem;
+    font-size: 2.5rem;
+}
+
+.test-drive {
+    max-width: 500px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background-color: #0d2536;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.test-drive label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.test-drive ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.test-drive input,
+.test-drive select,
+.test-drive textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #12346d7b;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+.test-drive input[type="submit"],
+.test-drive input[type="reset"] {
+    background-color: #1e50a797;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.test-drive input[type="submit"]:hover,
+.test-drive input[type="reset"]:hover {
+    background-color: #2a6bcb;
+    color: #091b28;
+}

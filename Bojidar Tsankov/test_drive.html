@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Запази тест драйв</title>
+    <link rel="stylesheet" href="style_navbar.css">
+    <link rel="stylesheet" href="style_testdrive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/car_website_logo.png" alt="PQS Logo" class="logo">
+                </a>
+                <h1>PQS Motors</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="car_page.html">Модели</a></li>
+                    <li><a href="test_drive.html">Тест драйв</a></li>
+                    <li><a href="servizi.html">Сервизи</a></li>
+                    <li><a href="dealer_page.html">Дилъри</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="test-drive-title">Запазете тест драйв</h2>
+        <br>
+
+        <form class="test-drive">
+            <label for="name">Вашето име (задължително)</label><br>
+            <input type="text" id="name" placeholder="Име" required /><br>
+
+            <label for="email">Вашият имейл (задължително)</label><br>
+            <input type="email" id="email" placeholder="something@gmail.com" required /><br>
+
+            <label for="phone">Телефон (задължително)</label><br>
+            <input type="tel" id="phone" placeholder="+359 12 345 6789" required /><br>
+
+            <label for="date">Дата на теста</label><br>
+            <input type="date" id="date" /><br>
+
+            <label for="choose-model">Изберете модел</label><br>
+            <select id="choose-model">
+                <option value="model-1">Модел 1</option>
+                <option value="model-2">Модел 2</option>
+                <option value="model-3">Модел 3</option>
+                <option value="model-4">Модел 4</option>
+            </select><br>
+
+            <label for="comment">Допълнителна информация (по избор)</label><br>
+            <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+            <br>
+
+            <input type="reset" value="Изчисти">
+            <input type="submit" value="Подай" />
+        </form>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/car_website_logo.png" alt="PQS logo">
+                <h1>PQS Motors</h1>
+            </div>
+            <div class="footer-links">
+                <a href="homepage.html">Начало</a>
+                <a href="car_page.html">Коли за продажба</a>
+                <a href="News.html">Новини</a>
+                <a href="servizi.html">Сервизи</a>
+                <a href="dealer_page.html">Дилъри</a>
+            </div>
+            <div class="footer-contacts">
+                <p> Телефон за връзка: 0888 123 456</p>
+                <p>email:Pqs.store@gmail.com</p>
+                <p>София, България</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = event.target.querySelector("#name").value;
+
+            const confirmed = confirm(`Уважаеми ${name} сигурни ли сте, че искате да подадете искане за тест драйв?`);
+            if (confirmed) {
+                event.target.reset();
+                alert("Успешно подадохте заявка за тест драйв ;)");
+            }
+
+        })
+    </script>
+</body>
+
+</html>
