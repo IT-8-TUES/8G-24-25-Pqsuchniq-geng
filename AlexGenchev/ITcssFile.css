@@ -246,4 +246,44 @@ body{
   background-color: #f0f0f0;
   color: #000;
 }
+.light-theme .main-header,
+.light-theme .site-footer,
+.light-theme .about-us,
+.light-theme .car-gallery,
+.light-theme .news-hero,
+.light-theme .news-grid {
+  background-color: #f9f9f9;
+}
+
+.light-theme .site-name,
+.light-theme .footer-logo h1,
+.light-theme .navigation a,
+.light-theme .footer-links a,
+.light-theme .footer-contacts,
+.light-theme .about-us h1,
+.light-theme .car-gallery h1,
+.light-theme .news-hero h1,
+.light-theme .hero-text h2 {
+  color: #333;
+}
+
+.light-theme .about-text,
+.light-theme .hero-text p,
+.light-theme .news-hero p,
+.light-theme .car-gallery h2 {
+  color: #666;
+}
+
+.light-theme .navigation a:hover,
+.light-theme .read-more:hover {
+  color: #0077cc;
+}
+
+.light-theme .more-cars,
+.light-theme .discount-button {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+
 
